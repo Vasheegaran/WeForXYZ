@@ -6,89 +6,285 @@
     <title>WeForXYZ - Digital Solutions Agency</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- Animated Background Elements -->
+    <div class="bg-shapes">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="shape-3"></div>
+    </div>
+
+    <!-- Header with Modern Design -->
+    <header class="modern-header">
         <div class="container">
-            <div class="logo">WeFor<span>XYZ</span></div>
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-rocket"></i></span>
+                <span>WeFor<span class="logo-highlight">XYZ</span></span>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="cta-nav">Get Started <i class="fas fa-arrow-right"></i></a></li>
                 </ul>
             </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
+    <!-- Hero Section with Particles -->
+    <section class="hero-section">
+        <div class="particles" id="particles-js"></div>
         <div class="container">
-            <h1>Building Smarter Brands with Digital, Code & AI</h1>
-            <p>We help businesses scale using smart marketing, technology, and automation</p>
-            <a href="contact.html" class="btn">Get Started</a>
-        </div>
-    </section>
-
-    <section class="services-preview">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Digital Marketing</h3>
-                    <p>Campaigns that convert. We drive real results through targeted strategies.</p>
+            <div class="hero-content">
+                <h5 class="hero-subtitle">Digital Transformation Experts</h5>
+                <h1 class="hero-title">Building <span class="text-gradient">Smarter Brands</span> with Digital, Code & AI</h1>
+                <p class="hero-description">We help businesses in Tamil Nadu and across India scale rapidly through cutting-edge digital marketing strategies, custom web development, and intelligent automation solutions.</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary">Explore Services</a>
+                    <a href="contact.html" class="btn btn-secondary">Get Free Consultation</a>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>Websites that wow and work. Custom solutions for your business needs.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-robot"></i>
-                    <h3>AI Automation</h3>
-                    <p>Manual tasks are so last year. Let us automate your workflows.</p>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="Digital Solutions">
+                <div class="hero-badge">
+                    <div class="badge-content">
+                        <span class="badge-number">200+</span>
+                        <span class="badge-text">Projects Delivered</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta">
+    <!-- Trusted By Section -->
+    <section class="trusted-by">
         <div class="container">
-            <h2>Ready to Transform Your Business?</h2>
-            <p>Get in touch with us today for a free consultation.</p>
-            <a href="contact.html" class="btn">Contact Us</a>
+            <p class="trusted-by-text">Trusted by businesses across industries:</p>
+            <div class="client-logos">
+                <img src="images/client-logo1.png" alt="Client Logo">
+                <img src="images/client-logo2.png" alt="Client Logo">
+                <img src="images/client-logo3.png" alt="Client Logo">
+                <img src="images/client-logo4.png" alt="Client Logo">
+                <img src="images/client-logo5.png" alt="Client Logo">
+            </div>
         </div>
     </section>
 
-    <footer>
+    <!-- About Company Section -->
+    <section class="about-company">
+        <div class="container">
+            <div class="section-header">
+                <h5 class="section-subtitle">Who We Are</h5>
+                <h2 class="section-title">Your Digital Growth Partners</h2>
+                <p class="section-description">Based in Tamil Nadu, we're a team of passionate digital experts dedicated to helping businesses thrive in the digital age.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Founded in 2023, WeForXYZ has quickly established itself as a leading digital solutions provider in South India. Our team combines creative marketing strategies with technical expertise to deliver measurable results for our clients.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-medal"></i></div>
+                            <div class="feature-text">
+                                <h4>Quality Assurance</h4>
+                                <p>Rigorous testing and quality checks on all deliverables</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                            <div class="feature-text">
+                                <h4>24/7 Support</h4>
+                                <p>Dedicated support team available round the clock</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-team.jpg" alt="WeForXYZ Team">
+                    <div class="experience-badge">
+                        <span class="years">2+</span>
+                        <span class="text">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header">
+                <h5 class="section-subtitle">What We Offer</h5>
+                <h2 class="section-title">Our Core Services</h2>
+                <p class="section-description">Comprehensive digital solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Digital Marketing</h3>
+                    <p>Data-driven strategies that deliver real results through SEO, PPC, social media, and content marketing.</p>
+                    <a href="services.html#digital-marketing" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications designed for performance, conversions, and user experience.</p>
+                    <a href="services.html#web-dev" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI Automation</h3>
+                    <p>Streamline operations and reduce costs with intelligent automation solutions tailored to your workflows.</p>
+                    <a href="services.html#ai-automation" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="200">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Automation Workflows</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="24">0</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h5 class="section-subtitle">Client Stories</h5>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>WeForXYZ transformed our online presence completely. Our website traffic increased by 300% in just 3 months and our lead generation has never been better!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/client1.jpg" alt="Client">
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p>CEO, Retail Solutions</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- More testimonials can be added -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Get in touch with us today for a free consultation and let's discuss how we can help you achieve your digital goals.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="tel:+919876543210" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> +91 98765 43210
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="modern-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>WeForXYZ</h3>
-                    <p>Building Smarter Brands with Digital, Code & AI.</p>
+                <div class="footer-col">
+                    <div class="logo">
+                        <span class="logo-icon"><i class="fas fa-rocket"></i></span>
+                        <span>WeFor<span class="logo-highlight">XYZ</span></span>
+                    </div>
+                    <p class="footer-about">Building Smarter Brands with Digital, Code & AI. We help businesses scale through innovative digital solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
+                <div class="footer-col">
+                    <h4>Services</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+                        <li><a href="services.html#web-dev">Web Development</a></li>
+                        <li><a href="services.html#ai-automation">AI Automation</a></li>
+                        <li><a href="services.html">All Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-envelope"></i> info@weforxyz.com</p>
-                    <p><i class="fas fa-phone"></i> +91 87790 16462</p>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Street, Chennai, Tamil Nadu 600001</li>
+                        <li><i class="fas fa-envelope"></i> info@weforxyz.com</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 WeForXYZ. All Rights Reserved.</p>
+                <p>&copy; 2023 WeForXYZ. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
