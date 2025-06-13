@@ -32,12 +32,13 @@
     <section class="services-detail">
         <div class="container">
             <div class="service-tabs">
-                <button class="tab-btn active" data-tab="digital-marketing">Digital Marketing</button>
-                <button class="tab-btn" data-tab="web-dev">Web Development</button>
-                <button class="tab-btn" data-tab="ai-automation">AI Automation</button>
+                <button class="tab-btn active" onclick="openTab('digital-marketing')">Digital Marketing</button>
+                <button class="tab-btn" onclick="openTab('web-dev')">Web Development</button>
+                <button class="tab-btn" onclick="openTab('ai-automation')">AI Automation</button>
             </div>
 
-            <div class="tab-content active" id="digital-marketing">
+            <!-- Digital Marketing Tab -->
+            <div id="digital-marketing" class="tab-content" style="display: block;">
                 <div class="service-detail-content">
                     <div class="service-detail-text">
                         <h2>Digital Marketing Services</h2>
@@ -97,7 +98,8 @@
                 </div>
             </div>
 
-            <div class="tab-content" id="web-dev">
+            <!-- Web Development Tab -->
+            <div id="web-dev" class="tab-content" style="display: none;">
                 <div class="service-detail-content">
                     <div class="service-detail-text">
                         <h2>Web Development Services</h2>
@@ -158,7 +160,8 @@
                 </div>
             </div>
 
-            <div class="tab-content" id="ai-automation">
+            <!-- AI Automation Tab -->
+            <div id="ai-automation" class="tab-content" style="display: none;">
                 <div class="service-detail-content">
                     <div class="service-detail-text">
                         <h2>AI Automation Services</h2>
@@ -254,7 +257,42 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/services.js"></script>
+    <script>
+        // Tab functionality
+        function openTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.getElementsByClassName('tab-content');
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = 'none';
+            }
+            
+            // Remove active class from all buttons
+            const tabBtns = document.getElementsByClassName('tab-btn');
+            for (let i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].classList.remove('active');
+            }
+            
+            // Show the selected tab content
+            document.getElementById(tabId).style.display = 'block';
+            
+            // Add active class to the clicked button
+            event.currentTarget.classList.add('active');
+        }
+        
+        // Animation for pricing cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const pricingOptions = document.querySelectorAll('.pricing-option');
+            pricingOptions.forEach((option, index) => {
+                option.style.opacity = '0';
+                option.style.transform = 'translateY(20px)';
+                option.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+                
+                setTimeout(() => {
+                    option.style.opacity = '1';
+                    option.style.transform = 'translateY(0)';
+                }, 100);
+            });
+        });
+    </script>
 </body>
 </html>
